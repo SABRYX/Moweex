@@ -8,9 +8,9 @@ import {
 } from "react-native";
 import { Header, Left, Button, Icon, Body } from "native-base";
 import { styles } from "./Styles";
-import ThePhoto from "../../components/thephoto/thePhotoView";
-import BlueView from "../../components/theBlueView/BlueView";
-import TheCalendar from "../../components/theCalendarView/theCalendar";
+import ThePhoto from "../../components/the-photo/ThePhoto";
+import BlueView from "../../components/blue-view/BlueView";
+import TheCalendar from "../../components/the-calendar/TheCalendar";
 
 class DashBoardTopic extends Component {
   constructor(props) {
@@ -31,13 +31,15 @@ class DashBoardTopic extends Component {
             </Button>
           </Left>
           <Body style={styles.headerBody}>
-            <Text style={styles.headerBodyText}>{"Schwerpunkt".toUpperCase()}</Text>
+            <Text style={styles.headerBodyText}>
+              {"Schwerpunkt".toUpperCase()}
+            </Text>
           </Body>
         </Header>
         <ScrollView style={styles.body}>
           <View style={styles.firstSection}>
             <ImageBackground
-              source={require("../../../src/styling-config/Images/symbols-img-banner-image.png")}
+              source={require("../../../src/styling-config/images/symbols-img-banner-image.png")}
               style={styles.fsImageBackground}
             >
               <View style={styles.fsOpacityView}>
@@ -59,7 +61,7 @@ class DashBoardTopic extends Component {
               erat, sed diam voluptua.
             </Text>
           </View>
-          <View style={{marginTop:25}}>
+          <View style={{ marginTop: 21.5 }}>
             <ThePhoto
               bigText="Gesünder durch den Tag mit Sport und gesundem Essen"
               smallText="GESUNDHEIT"
@@ -74,8 +76,18 @@ class DashBoardTopic extends Component {
               smallText="Gesundheit"
             />
           </View>
-          <BlueView bigText="Anmeldung zum Check" smallText="Anmeldeformular für Arbeitsplatzcheck"/>
-          <TheCalendar bigText="Grillfest mit Hermann Maier und Hansi Hinterseer Grillfest mit Hermann Maier und Hansi Hinterseer Grillfest mit Hermann Maier und Hansi Hinterseer Grillfest mit Hermann Maier und Hansi Hinterseer v v Grillfest mit Hermann Maier und Hansi Hinterseer" time="11.11.2017  | 05:30 Uhr" smallText="Werkseinfahrt Süd"/>
+          <BlueView
+            bigText="Anmeldung zum Check"
+            smallText="Anmeldeformular für Arbeitsplatzcheck"
+          />
+          <TheCalendar
+            bigText="Grillfest mit Hermann Maier und Hansi Hinterseer Grillfest mit Hermann Maier und Hansi Hinterseer Grillfest mit Hermann Maier und Hansi Hinterseer Grillfest mit Hermann Maier und Hansi Hinterseer v v Grillfest mit Hermann Maier und Hansi Hinterseer"
+            time="11.11.2017  | 05:30 Uhr"
+            smallText="Werkseinfahrt Süd"
+            month="Nov"
+            dayNum="11"
+            day="Mo."
+          />
         </ScrollView>
       </View>
     );

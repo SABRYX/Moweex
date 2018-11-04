@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, ImageBackground,TouchableOpacity } from "react-native";
+import { View, Text, ImageBackground, TouchableOpacity } from "react-native";
 import { Button, Icon, Card } from "native-base";
 import { styles } from "./Styles";
 
@@ -10,17 +10,24 @@ class TheCalendar extends Component {
 
   render() {
     return (
-      <Card style={styles.card}>
+      <View style={styles.card}>
         <View style={styles.imageView}>
-          {/* <ImageBackground
-            source={require("../../styling-config/Images/symbols-news-img-content-image.png")}
-            style={styles.image}
-          >
-            <Icon name="md-images" type="Ionicons" style={styles.imageIcon} />
-          </ImageBackground> */}
+          <View style={styles.innerCalendar}>
+            <View style={styles.blueView}>
+              <Text style={styles.monthText}>{this.props.month}</Text>
+            </View>
+            <View style={styles.whiteView}>
+              <Text style={styles.dayNum}>{this.props.dayNum}</Text>
+              <View style={styles.blueLine}>
+                <Text style={styles.day}>{this.props.day}</Text>
+              </View>
+            </View>
+          </View>
         </View>
         <View style={styles.textView}>
-          <Text style={styles.bigText} numberOfLines={2} >{this.props.bigText}</Text>
+          <Text style={styles.bigText} numberOfLines={2}>
+            {this.props.bigText}
+          </Text>
           <Text style={styles.time}>{this.props.time}</Text>
           <Text style={styles.smallText}>{this.props.smallText}</Text>
         </View>
@@ -33,7 +40,7 @@ class TheCalendar extends Component {
             />
           </TouchableOpacity>
         </View>
-      </Card>
+      </View>
     );
   }
 }

@@ -6,23 +6,26 @@ export const styles = StyleSheet.create({
     },
     backButton: {
       alignSelf: "center",
-      marginBottom: "5%"
+      marginBottom: "10%"
     },
     backButtonIcon: {
-      fontSize: 35
+      fontSize: 40,
+      fontWeight:"900",
+      color: "#0078A8",
     },
     headerBody: {
-      flex: 4,
-      alignContent: "flex-start"
+      flex: 6,
+      alignContent: "center",
     },
     headerLeft: {
-      flex: 1
+      width:20.5
     },
     headerBodyText: {
-      alignSelf: "flex-start",
-      marginLeft: "20%",
+      alignSelf:"center",
+      marginLeft: 15,
       fontSize: 17,
-      color: "#0078A8"
+      color: "#0078A8",
+      marginRight:40
     },
     body: {
       flex: 1,

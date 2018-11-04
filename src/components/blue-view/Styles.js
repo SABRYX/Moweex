@@ -5,19 +5,23 @@ export const styles = StyleSheet.create({
     backgroundColor: "rgb(226, 252, 252)",
     width:"96%",
     alignSelf:"center",
-    justifyContent:"center"
+    justifyContent:"center",
+    paddingLeft:13,
+    marginTop:10.5
   },
   bigText: {
     fontSize: 25,
     fontWeight: "500",
     color: "#4A4A4A",
-    alignSelf:"center",
+    alignSelf:"flex-start",
   },
   smallText: {
+
     fontSize: 13,
     fontWeight: "100",
     marginBottom: 5,
+    marginTop:  7.5,
     color: "#4A4A4A",
-    alignSelf:"center",
+    alignSelf:"flex-start",
   }
 });

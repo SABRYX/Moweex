@@ -1,6 +1,6 @@
 import { createStackNavigator } from "react-navigation";
 
-import DashBoardTopic from "./src/screens/dashboardtopic/DashBoardTopic";
+import DashBoardTopic from "./src/screens/dashboard-topic/DashboardTopic";
 
 const App = createStackNavigator({
   DashBoardTopic: {
