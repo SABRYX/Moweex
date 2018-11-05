@@ -4,29 +4,6 @@ export const styles = StyleSheet.create({
     Main: {
       flex: 1,
     },
-    backButton: {
-      alignSelf: "center",
-      marginBottom: "10%"
-    },
-    backButtonIcon: {
-      fontSize: 40,
-      fontWeight:"900",
-      color: "#0078A8",
-    },
-    headerBody: {
-      flex: 6,
-      alignContent: "center",
-    },
-    headerLeft: {
-      width:20.5
-    },
-    headerBodyText: {
-      alignSelf:"center",
-      marginLeft: 15,
-      fontSize: 17,
-      color: "#0078A8",
-      marginRight:40
-    },
     body: {
       flex: 1,
       backgroundColor: "white",
@@ -52,12 +29,12 @@ export const styles = StyleSheet.create({
     fsBigText: {
       fontSize: 25,
       color: "white",
-      fontWeight: "600"
+      // fontFamily:"voestalpine Medium"
     },
     fsSmallText: {
       fontSize: 13,
       color: "white",
-      fontWeight: "200"
+      // fontFamily:"voestalpine-Light"
     },
     secondSection: {
       height: 170,
@@ -70,6 +47,6 @@ export const styles = StyleSheet.create({
         fontSize:14,
         marginTop:"5%",
         color:"#4A4A4A",
-        fontWeight:"100"
+        // fontFamily:"voestalpine-Light"
     }
   });

@@ -1,0 +1,19 @@
+export const styles = {
+    main:{
+        flex:1
+    },
+    tabStyle:{
+        backgroundColor:"#0078A8",
+    },
+    activeTabStyle:{
+        backgroundColor:"#0078A8",
+    },
+    tabTextStyle:{
+        color:"white",
+        fontSize:17
+    },
+    activeTextStyle:{
+        color:"white",
+        fontSize:17
+    }
+}

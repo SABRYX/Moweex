@@ -26,10 +26,10 @@ class TheCalendar extends Component {
         </View>
         <View style={styles.textView}>
           <Text style={styles.bigText} numberOfLines={2}>
-            {this.props.bigText}
+            {(this.props.bigText).toUpperCase()}
           </Text>
           <Text style={styles.time}>{this.props.time}</Text>
-          <Text style={styles.smallText}>{this.props.smallText}</Text>
+          <Text style={styles.smallText}>{(this.props.smallText).toUpperCase()}</Text>
         </View>
         <View style={styles.buttonView}>
           <TouchableOpacity style={styles.button} transparent>

@@ -4,15 +4,28 @@ import {
   Text,
   StyleSheet,
   ImageBackground,
-  ScrollView
+  ScrollView,
+  Button
 } from "react-native";
-import { Header, Left, Button, Icon, Body } from "native-base";
 import { styles } from "./Styles";
 import ThePhoto from "../../components/the-photo/ThePhoto";
 import BlueView from "../../components/blue-view/BlueView";
 import TheCalendar from "../../components/the-calendar/TheCalendar";
 
 class DashBoardTopic extends Component {
+  static navigationOptions = {
+    title: "Schwerpunkt".toUpperCase(),
+    headerTitleStyle: {
+      width: "90%",
+      textAlign: "center"
+    },
+    headerStyle: {
+      backgroundColor: "white"
+    },
+    headerTintColor: "#0078A8"
+  };
+
+  /* render function, etc */
   constructor(props) {
     super(props);
   }
@@ -20,22 +33,6 @@ class DashBoardTopic extends Component {
   render() {
     return (
       <View style={styles.Main}>
-        <Header noShadow={true}>
-          <Left style={styles.headerLeft}>
-            <Button transparent style={styles.backButton}>
-              <Icon
-                name="ios-arrow-round-back"
-                type="Ionicons"
-                style={styles.backButtonIcon}
-              />
-            </Button>
-          </Left>
-          <Body style={styles.headerBody}>
-            <Text style={styles.headerBodyText}>
-              {"Schwerpunkt".toUpperCase()}
-            </Text>
-          </Body>
-        </Header>
         <ScrollView style={styles.body}>
           <View style={styles.firstSection}>
             <ImageBackground
@@ -61,24 +58,31 @@ class DashBoardTopic extends Component {
               erat, sed diam voluptua.
             </Text>
           </View>
-          <View style={{ marginTop: 21.5 }}>
+          <View style={{ marginTop: 21.5,padding:4 }}>
             <ThePhoto
               bigText="Gesünder durch den Tag mit Sport und gesundem Essen"
               smallText="GESUNDHEIT"
+              withIcon
+              main
             />
             <ThePhoto
               bigText="Versuchen Sie bei Meetings immer zu stehen"
               smallText="Arbeitsplatz"
               selected={true}
+              withIcon
+              main
             />
             <ThePhoto
               bigText="Ein Apfel am Tag hält sie gesund"
               smallText="Gesundheit"
+              withIcon
+              main
             />
           </View>
           <BlueView
             bigText="Anmeldung zum Check"
             smallText="Anmeldeformular für Arbeitsplatzcheck"
+            main
           />
           <TheCalendar
             bigText="Grillfest mit Hermann Maier und Hansi Hinterseer Grillfest mit Hermann Maier und Hansi Hinterseer Grillfest mit Hermann Maier und Hansi Hinterseer Grillfest mit Hermann Maier und Hansi Hinterseer v v Grillfest mit Hermann Maier und Hansi Hinterseer"
@@ -87,6 +91,10 @@ class DashBoardTopic extends Component {
             month="Nov"
             dayNum="11"
             day="Mo."
+          />
+          <Button
+            onPress={() => this.props.navigation.navigate("NewsOverview")}
+            title="GO"
           />
         </ScrollView>
       </View>

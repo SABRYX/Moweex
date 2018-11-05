@@ -1,28 +1,41 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  nonSelectedCard: {
+  main:{
     flexDirection: "row",
-    flex: 1,
-    width: "96%",
     height: 61,
-    marginTop: 10,
     alignSelf: "center",
+    borderColor: "black",
+    borderWidth: 0.25,
+    borderRadius:5,
+    marginTop:10
   },
-  selectedCard: {
+  notMain:{
     flexDirection: "row",
-    flex: 1,
-    width: "96%",
     height: 61,
-    marginTop: 10,
+    alignSelf: "center",
+    borderBottomColor: "black",
+    borderBottomWidth: 0.25,
+  },
+  nonSelectedCardMain: {
+    flexDirection: "row",
+    height: "100%",
+    width:"100%",
+    alignSelf: "center",
+    borderColor: "black",
+  },
+  selectedCardMain: {
+    flexDirection: "row",
+    width:"100%",
+    height: "100%",
     alignSelf: "center",
     borderBottomColor: "#0078A8",
-    borderBottomWidth: 3
+    borderBottomWidth: 3,
   },
-  imageView: { height: 61,width:60},
+  imageView: { height: 62,width:60},
   image: {
-    width:60 ,
-    height: 63,
+    width:"100%" ,
+    height: "100%",
     justifyContent: "center"
   },
   imageIcon: {
@@ -33,17 +46,27 @@ export const styles = StyleSheet.create({
   textView: { flex: 5,justifyContent:"flex-end",alignContent:"flex-start",paddingLeft:8},
   bigText: {
     fontSize: 15,
-    fontWeight: "500",
     color: "#4A4A4A",
     marginTop:3,
+    // fontFamily:"voestalpine Medium",
+  },
+  smallView:{
+    flexDirection:"row",
+    justifyContent:"space-between"
   },
   smallText: {
     fontSize: 13,
-    fontWeight: "100",
     marginBottom: 5,
     textAlignVertical: "bottom",
     color: "#A5A5A5",
+    // fontFamily:"voestalpine-Light"
 
+  },
+  smallTime:{
+    fontSize: 13,
+    marginBottom: 5,
+    color: "#A5A5A5",
+    // fontFamily:"voestalpine-Light",
   },
   buttonView: {
     flex: 0.5,

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, ImageBackground, TouchableOpacity } from "react-native";
-import { Button, Icon, Card } from "native-base";
+import { Button, Icon, Card, Thumbnail } from "native-base";
 import { styles } from "./Styles";
 
 class ThePhoto extends Component {
@@ -10,22 +10,46 @@ class ThePhoto extends Component {
 
   render() {
     return (
-      <Card
+      <View
         style={
-          this.props.selected ? styles.selectedCard : styles.nonSelectedCard
+          this.props.main
+            ? styles.main
+            : styles.notMain
         }
       >
-        <View style={styles.imageView}>
-          <ImageBackground
-            source={require("../../styling-config/images/symbols-news-img-content-image.png")}
-            style={styles.image}
-          >
-            <Icon name="md-images" type="Ionicons" style={styles.imageIcon} />
-          </ImageBackground>
-        </View>
+        <View
+          style={
+            this.props.selected
+              ? styles.selectedCardMain
+              : styles.nonSelectedCardMain
+          }
+        >
+          <View style={styles.imageView}>
+            <ImageBackground
+              source={require("../../styling-config/images/symbols-news-img-content-image.png")}
+              style={styles.image}
+            >
+              {this.props.withIcon ? (
+                <Icon
+                  name="md-images"
+                  type="Ionicons"
+                  style={styles.imageIcon}
+                />
+              ) : null}
+            </ImageBackground>
+          </View>
           <View style={styles.textView}>
-            <Text style={styles.bigText}>{this.props.bigText}</Text>
-            <Text style={styles.smallText}>{this.props.smallText}</Text>
+            <Text style={styles.bigText}>
+              {this.props.bigText.toUpperCase()}
+            </Text>
+            <View style={styles.smallView}>
+              <View>
+                <Text style={styles.smallText}>{this.props.smallText}</Text>
+              </View>
+              <View>
+                <Text style={styles.smallTime}>{this.props.smallTime}</Text>
+              </View>
+            </View>
           </View>
           <View style={styles.buttonView}>
             <TouchableOpacity style={styles.button} transparent>
@@ -36,7 +60,8 @@ class ThePhoto extends Component {
               />
             </TouchableOpacity>
           </View>
-      </Card>
+        </View>
+      </View>
     );
   }
 }
