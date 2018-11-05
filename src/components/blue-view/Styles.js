@@ -35,7 +35,7 @@ export const styles = StyleSheet.create({
     fontSize: 25,
     color: "#4A4A4A",
     alignSelf:"flex-start",
-    // fontFamily:"voestalpine Medium",
+    fontFamily:"voestalpine-Medium",
 
   },
   smallText: {
@@ -44,7 +44,7 @@ export const styles = StyleSheet.create({
     marginTop:  7.5,
     color: "#4A4A4A",
     alignSelf:"flex-start",
-    // fontFamily:"voestalpine Light"
+    fontFamily:"voestalpine-Light"
   },
   buttonView: {
     flex: 1,

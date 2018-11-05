@@ -6,12 +6,13 @@ import {
   Text,
   TouchableOpacity,
   WebView,
-  Linking
+  Linking,
+  Share,
+  Button
 } from "react-native";
 import { styles } from "./Style";
 import BlueView from "../../components/blue-view/BlueView";
 import { Header, Left, Body, Right, Icon } from "native-base";
-import Share from "react-native-share";
 
 class Services extends Component {
   static navigationOptions = {
@@ -53,33 +54,30 @@ class Services extends Component {
               animationType="slide"
               transparent={false}
               visible={this.state.visableModale}
+              onRequestClose={()=>{console.log("holla")}}
             >
               <View style={styles.modal}>
                 <View>
-                  <Header>
+                  <Header style={styles.header}>
                     <Left>
                       <TouchableOpacity
                         onPress={() => {
                           this.showModal(!this.state.visableModale);
                         }}
                       >
-                        <Icon
-                          name="close"
-                          type="MaterialIcons"
-                          style={styles.Icon}
-                        />
+                        <Text style={styles.closeText}>Fertig</Text>
                       </TouchableOpacity>
                     </Left>
                     <Body style={styles.headerBody}>
-                      <Text>{this.state.name}</Text>
+                      <Text style={styles.headerText}>{(this.state.name).toUpperCase()}</Text>
                     </Body>
                     <Right>
                       <TouchableOpacity
                         onPress={() => this.webviewRef.current.reload()}
                       >
                         <Icon
-                          name="reload"
-                          type="SimpleLineIcons"
+                          name="ios-refresh"
+                          type="Ionicons"
                           style={styles.Icon}
                         />
                       </TouchableOpacity>
@@ -94,8 +92,26 @@ class Services extends Component {
                 />
               </View>
               <View style={styles.footer}>
+              <View style={styles.iconView}>
+                  <TouchableOpacity>
+                    <Icon
+                      name="ios-arrow-back"
+                      type="Ionicons"
+                      style={styles.Icon}
+                    />
+                  </TouchableOpacity>
+                </View>
                 <View style={styles.iconView}>
-                  <TouchableOpacity onPress={() => Share.open(shareOptions)}>
+                  <TouchableOpacity>
+                    <Icon
+                      name="ios-arrow-forward"
+                      type="Ionicons"
+                      style={styles.Icon}
+                    />
+                  </TouchableOpacity>
+                </View>
+                <View style={styles.iconView}>
+                  <TouchableOpacity onPress={() => Share.share(shareOptions)}>
                     <Icon
                       name="share-apple"
                       type="EvilIcons"
@@ -108,12 +124,13 @@ class Services extends Component {
                     onPress={() => Linking.openURL("https://" + this.state.url)}
                   >
                     <Icon
-                      name="compass"
-                      type="MaterialCommunityIcons"
+                      name="safari"
+                      type="FontAwesome"
                       style={styles.Icon}
                     />
                   </TouchableOpacity>
                 </View>
+
               </View>
             </Modal>
           </View>
@@ -146,6 +163,7 @@ class Services extends Component {
           showModal={this.showModal}
           url="twitter.com"
         />
+        <Button title = "Go To Calendar" onPress={()=>this.props.navigation.navigate("CalendarPicker")}/>
       </View>
     );
   }

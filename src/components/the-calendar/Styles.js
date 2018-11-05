@@ -15,8 +15,8 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "white",
     alignItems: "center",
-    width: 70,
-    alignSelf: "center"
+    width:70,
+    alignSelf:"center"
   },
   blueView: {
     width: "70%",
@@ -26,8 +26,8 @@ export const styles = StyleSheet.create({
   monthText: {
     color: "white",
     textAlign: "center",
-    fontSize: 12.5
-    // fontFamily: "voestalpine Medium"
+    fontSize: 12.5,
+    fontFamily: "voestalpine-Medium"
   },
   whiteView: {
     width: "70%",
@@ -36,8 +36,8 @@ export const styles = StyleSheet.create({
   },
   dayNum: {
     fontSize: 25,
-    textAlign: "center"
-    // fontFamily: "voestalpine Medium"
+    textAlign: "center",
+    fontFamily: "voestalpine-Medium"
   },
   blueLine: {
     borderBottomColor: "#0078A8",
@@ -45,39 +45,35 @@ export const styles = StyleSheet.create({
     width: "70%",
     alignSelf: "center"
   },
-  day: {
-    fontSize: 12,
-    textAlign: "center"
-    // fontFamily: "voestalpine-Light"
-  },
+  day: { fontSize: 12, textAlign: "center", fontFamily: "voestalpine-Light" },
   textView: {
     flex: 7,
     alignItems: "center",
     alignContent: "space-between",
     alignSelf: "center",
-    paddingLeft: 10
+    paddingLeft: 10,
   },
   bigText: {
     fontSize: 18,
     color: "white",
     alignSelf: "flex-start",
     maxHeight: 60,
-    // fontFamily: "voestalpine Medium"
+    fontFamily: "voestalpine-Medium"
   },
   time: {
     fontSize: 15,
     color: "white",
     alignSelf: "flex-start",
-    // fontFamily: "voestalpine-Light",
-    marginTop: 6
+    fontFamily: "voestalpine-Light",
+    marginTop:6
   },
   smallText: {
     fontSize: 11,
     marginBottom: 5,
     color: "white",
     alignSelf: "flex-start",
-    // fontFamily: "voestalpine-Light",
-    marginTop: 3
+    fontFamily: "voestalpine-Light",
+    marginTop:3
   },
   buttonView: {
     flex: 2,

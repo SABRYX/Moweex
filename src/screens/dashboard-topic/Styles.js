@@ -29,12 +29,12 @@ export const styles = StyleSheet.create({
     fsBigText: {
       fontSize: 25,
       color: "white",
-      // fontFamily:"voestalpine Medium"
+      fontFamily:"voestalpine-Medium"
     },
     fsSmallText: {
       fontSize: 13,
       color: "white",
-      // fontFamily:"voestalpine-Light"
+      fontFamily:"voestalpine-Light"
     },
     secondSection: {
       height: 170,
@@ -47,6 +47,6 @@ export const styles = StyleSheet.create({
         fontSize:14,
         marginTop:"5%",
         color:"#4A4A4A",
-        // fontFamily:"voestalpine-Light"
+        fontFamily:"voestalpine-Light"
     }
   });

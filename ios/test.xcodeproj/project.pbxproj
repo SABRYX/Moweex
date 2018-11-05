@@ -45,10 +45,9 @@
 		48A1DABC8BB34CEE8A408879 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AD619C93A814EFF945BF0EC /* Roboto.ttf */; };
 		522D64E8C35C4CF988C5FC72 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B38D37A56EF487A9B4B71D9 /* FontAwesome.ttf */; };
 		53ADA61CE2114C1E92CCFDF2 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661F1EBD4FB949EEBE081F1E /* Foundation.ttf */; };
-		5BFE7652705643B4BCDB425B /* voestalpineMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BAA25897954B4D0A865B8D0B /* voestalpineMedium.otf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		8B981166218F04FA009526FE /* voestalpine Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B981164218F04FA009526FE /* voestalpine Light.otf */; };
-		8B981167218F04FA009526FE /* voestalpine Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B981165218F04FA009526FE /* voestalpine Medium.otf */; };
+		8BF3E9EE2190583800857DA0 /* voestalpine Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF3E9EC2190583800857DA0 /* voestalpine Light.otf */; };
+		8BF3E9EF2190583800857DA0 /* voestalpine Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF3E9ED2190583800857DA0 /* voestalpine Medium.otf */; };
 		8D8DA93C205D4DE198B0F24F /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7EEC4E355CE42A1BF4D5778 /* MaterialCommunityIcons.ttf */; };
 		9CAEE4DAF9AF47AC9F990C04 /* libRNShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFFE54720554FE4B43868B8 /* libRNShare.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -56,7 +55,6 @@
 		C9CCEA06249B4E3EA665C0E1 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3337CF7C8D514B4AB8B72106 /* Ionicons.ttf */; };
 		CCB02A2F133E48899212DE67 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ADCFA7DF8114A8EAF3669B0 /* EvilIcons.ttf */; };
 		E77DC78EC61840C682100550 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6C180E4D6B24E63AB989DAD /* Entypo.ttf */; };
-		E883B7CB7A6048CB8DD87B11 /* voestalpine Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D696119C10334A74AB347906 /* voestalpine Medium.otf */; };
 		FB15BB3497A040E4BAAD7FC9 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D91398571A884CE1871A0886 /* rubicon-icon-font.ttf */; };
 /* End PBXBuildFile section */
 
@@ -377,8 +375,8 @@
 		72B4E11F178F4804810B8020 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		8B981164218F04FA009526FE /* voestalpine Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "voestalpine Light.otf"; path = "../../../../Downloads/voestalpine Light.otf"; sourceTree = "<group>"; };
-		8B981165218F04FA009526FE /* voestalpine Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "voestalpine Medium.otf"; path = "../../../../Downloads/voestalpine Medium.otf"; sourceTree = "<group>"; };
+		8BF3E9EC2190583800857DA0 /* voestalpine Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "voestalpine Light.otf"; sourceTree = "<group>"; };
+		8BF3E9ED2190583800857DA0 /* voestalpine Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "voestalpine Medium.otf"; sourceTree = "<group>"; };
 		9AD619C93A814EFF945BF0EC /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
 		A635EA43EB744C4DBB9A7977 /* RNShare.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNShare.xcodeproj; path = "../node_modules/react-native-share/ios/RNShare.xcodeproj"; sourceTree = "<group>"; };
 		A6C180E4D6B24E63AB989DAD /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
@@ -650,8 +648,8 @@
 		8B981163218F04E3009526FE /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				8B981164218F04FA009526FE /* voestalpine Light.otf */,
-				8B981165218F04FA009526FE /* voestalpine Medium.otf */,
+				8BF3E9EC2190583800857DA0 /* voestalpine Light.otf */,
+				8BF3E9ED2190583800857DA0 /* voestalpine Medium.otf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -1160,9 +1158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B981166218F04FA009526FE /* voestalpine Light.otf in Resources */,
+				8BF3E9EE2190583800857DA0 /* voestalpine Light.otf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				8B981167218F04FA009526FE /* voestalpine Medium.otf in Resources */,
+				8BF3E9EF2190583800857DA0 /* voestalpine Medium.otf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				E77DC78EC61840C682100550 /* Entypo.ttf in Resources */,
 				CCB02A2F133E48899212DE67 /* EvilIcons.ttf in Resources */,
@@ -1178,9 +1176,7 @@
 				FB15BB3497A040E4BAAD7FC9 /* rubicon-icon-font.ttf in Resources */,
 				AF84BB91C16C47B79AF7708A /* SimpleLineIcons.ttf in Resources */,
 				3C39057DF7D6450F9A328AA6 /* Zocial.ttf in Resources */,
-				5BFE7652705643B4BCDB425B /* voestalpineMedium.otf in Resources */,
 				30F922726AAA40A1A5DBD7E8 /* voestalpine Light.otf in Resources */,
-				E883B7CB7A6048CB8DD87B11 /* voestalpine Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

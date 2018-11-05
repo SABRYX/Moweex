@@ -48,7 +48,7 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     color: "#4A4A4A",
     marginTop:3,
-    // fontFamily:"voestalpine Medium",
+    fontFamily:"voestalpine-Medium",
   },
   smallView:{
     flexDirection:"row",
@@ -59,14 +59,14 @@ export const styles = StyleSheet.create({
     marginBottom: 5,
     textAlignVertical: "bottom",
     color: "#A5A5A5",
-    // fontFamily:"voestalpine-Light"
+    fontFamily:"voestalpine-Light"
 
   },
   smallTime:{
     fontSize: 13,
     marginBottom: 5,
     color: "#A5A5A5",
-    // fontFamily:"voestalpine-Light",
+    fontFamily:"voestalpine-Light",
   },
   buttonView: {
     flex: 0.5,
