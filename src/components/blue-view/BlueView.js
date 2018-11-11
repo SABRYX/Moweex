@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, ImageBackground, TouchableOpacity } from "react-native";
+import { View, Text, ImageBackground, TouchableOpacity,TouchableHighlight } from "react-native";
 import { Button, Icon, Card } from "native-base";
 import { styles } from "./Styles";
 
@@ -10,7 +10,12 @@ class BlueView extends Component {
 
   render() {
     return (
-      <TouchableOpacity style={this.props.main ? styles.card : styles.notMain} onPress={()=>this.props.showModal(this.props.url,this.props.bigText)}>
+      <TouchableOpacity
+        style={this.props.main ? styles.card : styles.notMain}
+        onPress={()=>alert(this.props)}
+        {...this.props.sortHandlers}
+      >
+        <View style={{flexDirection:"row",flex:1}}>
         <View style={this.props.main ? styles.textMain : styles.textNotMain}>
           <Text style={styles.bigText}>{this.props.bigText.toUpperCase()}</Text>
           <Text style={styles.smallText}>{this.props.smallText}</Text>
@@ -18,15 +23,17 @@ class BlueView extends Component {
 
         {this.props.withArrow ? (
           <View style={styles.buttonView}>
-            <TouchableOpacity style={styles.button} transparent>
+            <TouchableHighlight style={styles.button} transparent>
               <Icon
                 name="keyboard-arrow-right"
                 type="MaterialIcons"
                 style={styles.icon}
               />
-            </TouchableOpacity>
+            </TouchableHighlight>
           </View>
         ) : null}
+        </View>
+
       </TouchableOpacity>
     );
   }

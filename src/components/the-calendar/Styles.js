@@ -3,7 +3,6 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   card: {
     flexDirection: "row",
-    flex: 1,
     width: "96%",
     height: 92,
     marginTop: 11.5,
