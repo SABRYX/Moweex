@@ -232,7 +232,7 @@ class CalendarPicker extends Component {
         <View
           style={{
             height: 147,
-            alignSelf: "center",
+            backgroundColor:"red"
           }}
         >
           {/* <Carousel

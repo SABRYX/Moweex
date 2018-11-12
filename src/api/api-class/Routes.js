@@ -3,7 +3,7 @@ export const Routes = {
   services: {
     url: "services",
     method: "GET",
-    auth:true,
+    auth: true,
     headers: {
       "Content-Type": "application/json"
     }

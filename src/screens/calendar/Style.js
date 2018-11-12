@@ -24,7 +24,8 @@ export const styles = StyleSheet.create({
     justifyContent: "space-between"
   },
   wrapper:{
-      height:147
+      height:147,
+      backgroundColor:"red"
   },
   slide: {
     justifyContent: "flex-start",
