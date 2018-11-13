@@ -47,8 +47,10 @@
 		522D64E8C35C4CF988C5FC72 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B38D37A56EF487A9B4B71D9 /* FontAwesome.ttf */; };
 		53ADA61CE2114C1E92CCFDF2 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661F1EBD4FB949EEBE081F1E /* Foundation.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		8B1E96ED219B1240009A3F7C /* libRNZipArchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1E96EC219B11FD009A3F7C /* libRNZipArchive.a */; };
 		8B63495C219856F700F3CCCA /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B634934219856F700F3CCCA /* libsqlite3.0.tbd */; };
 		8B6349622198910200F3CCCA /* www in Resources */ = {isa = PBXBuildFile; fileRef = 8B6349612198910100F3CCCA /* www */; };
+		8B6349E42199A9F700F3CCCA /* libRNFetchBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6349E12199A9B000F3CCCA /* libRNFetchBlob.a */; };
 		8BF3E9EE2190583800857DA0 /* voestalpine Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF3E9EC2190583800857DA0 /* voestalpine Light.otf */; };
 		8BF3E9EF2190583800857DA0 /* voestalpine Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF3E9ED2190583800857DA0 /* voestalpine Medium.otf */; };
 		8D8DA93C205D4DE198B0F24F /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7EEC4E355CE42A1BF4D5778 /* MaterialCommunityIcons.ttf */; };
@@ -329,12 +331,26 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		8B1E96EB219B11FD009A3F7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1E96E7219B11FC009A3F7C /* RNZipArchive.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D061F22A1E4887C4000350B4;
+			remoteInfo = RNZipArchive;
+		};
 		8B6349162198501300F3CCCA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8ED8BB13B01F4FD98704CEFB /* SQLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E23D7B471ACEFE2A00C59171;
 			remoteInfo = SQLite;
+		};
+		8B6349E02199A9B000F3CCCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6349B72199A9B000F3CCCA /* RNFetchBlob.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A15C300E1CD25C330074CB35;
+			remoteInfo = RNFetchBlob;
 		};
 		8BF3E9B521903ABC00857DA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -387,8 +403,10 @@
 		72B4E11F178F4804810B8020 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8B1E96E7219B11FC009A3F7C /* RNZipArchive.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNZipArchive.xcodeproj; path = "../node_modules/react-native-zip-archive/ios/RNZipArchive.xcodeproj"; sourceTree = "<group>"; };
 		8B634934219856F700F3CCCA /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		8B6349612198910100F3CCCA /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../www; sourceTree = "<group>"; };
+		8B6349B72199A9B000F3CCCA /* RNFetchBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFetchBlob.xcodeproj; path = "../node_modules/rn-fetch-blob/ios/RNFetchBlob.xcodeproj"; sourceTree = "<group>"; };
 		8BF3E9EC2190583800857DA0 /* voestalpine Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "voestalpine Light.otf"; sourceTree = "<group>"; };
 		8BF3E9ED2190583800857DA0 /* voestalpine Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "voestalpine Medium.otf"; sourceTree = "<group>"; };
 		8ED8BB13B01F4FD98704CEFB /* SQLite.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../node_modules/react-native-sqlite-storage/src/ios/SQLite.xcodeproj"; sourceTree = "<group>"; };
@@ -420,6 +438,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1E96ED219B1240009A3F7C /* libRNZipArchive.a in Frameworks */,
+				8B6349E42199A9F700F3CCCA /* libRNFetchBlob.a in Frameworks */,
 				8B63495C219856F700F3CCCA /* libsqlite3.0.tbd in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
@@ -611,6 +631,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				8B1E96E7219B11FC009A3F7C /* RNZipArchive.xcodeproj */,
+				8B6349B72199A9B000F3CCCA /* RNFetchBlob.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -666,10 +688,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8B1E96E8219B11FC009A3F7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B1E96EC219B11FD009A3F7C /* libRNZipArchive.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8B6349132198501300F3CCCA /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				8B6349172198501300F3CCCA /* libSQLite.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B6349B82199A9B000F3CCCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B6349E12199A9B000F3CCCA /* libRNFetchBlob.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -820,7 +858,13 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = D9DB2T42QZ;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = D9DB2T42QZ;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -894,8 +938,16 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
+					ProductGroup = 8B6349B82199A9B000F3CCCA /* Products */;
+					ProjectRef = 8B6349B72199A9B000F3CCCA /* RNFetchBlob.xcodeproj */;
+				},
+				{
 					ProductGroup = 8BF3E9B221903AB900857DA0 /* Products */;
 					ProjectRef = A635EA43EB744C4DBB9A7977 /* RNShare.xcodeproj */;
+				},
+				{
+					ProductGroup = 8B1E96E8219B11FC009A3F7C /* Products */;
+					ProjectRef = 8B1E96E7219B11FC009A3F7C /* RNZipArchive.xcodeproj */;
 				},
 				{
 					ProductGroup = 8B6349132198501300F3CCCA /* Products */;
@@ -1165,11 +1217,25 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		8B1E96EC219B11FD009A3F7C /* libRNZipArchive.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNZipArchive.a;
+			remoteRef = 8B1E96EB219B11FD009A3F7C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		8B6349172198501300F3CCCA /* libSQLite.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSQLite.a;
 			remoteRef = 8B6349162198501300F3CCCA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B6349E12199A9B000F3CCCA /* libRNFetchBlob.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNFetchBlob.a;
+			remoteRef = 8B6349E02199A9B000F3CCCA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		8BF3E9B621903ABC00857DA0 /* libRNShare.a */ = {
@@ -1339,6 +1405,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9DB2T42QZ;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1362,6 +1431,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test.app/test";
 			};
 			name = Debug;
@@ -1370,7 +1440,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = D9DB2T42QZ;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-share/ios",
@@ -1390,6 +1463,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test.app/test";
 			};
 			name = Release;
@@ -1398,22 +1472,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = D9DB2T42QZ;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-share/ios",
 					"$(SRCROOT)/../node_modules/react-native-sqlite-storage/src/ios",
 				);
 				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moweex.newapp;
 				PRODUCT_NAME = test;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1422,21 +1502,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9DB2T42QZ;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-share/ios",
 					"$(SRCROOT)/../node_modules/react-native-sqlite-storage/src/ios",
 				);
 				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moweex.newapp;
 				PRODUCT_NAME = test;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1610,7 +1696,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1663,7 +1749,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MOWEEX GmbH (D9DB2T42QZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MOWEEX GmbH (D9DB2T42QZ)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
