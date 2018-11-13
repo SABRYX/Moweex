@@ -26,7 +26,7 @@ class Api {
 	if (route.auth && this.route.headers.Authorization === "") {
         //get token and set token
         this.getToken().then(token => {
-			console.log("token",token)
+			// console.log("token",token)
           this.route.headers.Authorization = `bearer ${token}`;
           this.request(Route, callback);
         });
@@ -64,7 +64,7 @@ class Api {
   getToken = async () => {
     try {
       const value = await AsyncStorage.getItem("token");
-      console.log(value);
+      // console.log(value);
       if (value !== null) {
         return value;
       }
